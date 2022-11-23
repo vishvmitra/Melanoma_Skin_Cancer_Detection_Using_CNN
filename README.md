@@ -26,10 +26,15 @@ The data set contains the following diseases:
 - Vascular lesion
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- We created a CNN Model using the image dataset (ISIC) with 3 convulated layers, 1 drop out layer(50%), 1 Flatten Layer,
+  1 Dense Layer (relu) and 1 Output Layer with SoftMax activation function. We used Adam optimizer and categorical cross_entropy for loss function. 
+
+- Without using the augmentor, the model did not perform well (Training Accuracy: 0.7048, Validation Accuracy: 0.5570). 
+  This is because of underfitting. As there is a huge class imbalance wrt number of images for each class of data. 
+
+- After using the augmentor, which helped to create additional images for classes with less data, it improved the model training
+  significantly. The model performed really well on both training and Validation data set 
+  (Training Accurary: 0.8247, Validation Accuracy: 0.7877)
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
