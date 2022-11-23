@@ -30,7 +30,7 @@ The data set contains the following diseases:
   1 Dense Layer (relu) and 1 Output Layer with SoftMax activation function. We used Adam optimizer and categorical cross_entropy for loss function. 
 
 - Without using the augmentor, the model did not perform well (Training Accuracy: 0.7048, Validation Accuracy: 0.5570). 
-  This is because of underfitting. As there is a huge class imbalance wrt number of images for each class of data. 
+  This is because of overfitting. As there is a huge class imbalance wrt number of images for each class of data. 
 
 - After using the augmentor, which helped to create additional images for classes with less data, it improved the model training
   significantly. The model performed really well on both training and Validation data set 
