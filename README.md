@@ -1,4 +1,4 @@
-# Project Name
+# Melanoma_Skin_Cancer_Detection_Using_CNN
 > CNN based model which can accurately detect melanoma
 
 
